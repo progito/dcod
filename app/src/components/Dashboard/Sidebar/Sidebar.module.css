@@ -1,0 +1,116 @@
+.sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    border-right: 2px solid #e0e0e0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+    background-color: #f8f9fa;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #5c6bc0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon:hover {
+    background-color: #3f4c9b;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon:active {
+    background-color: #2c3873;
+    transform: translateY(2px);
+}
+
+.separator {
+    width: 60px;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+}
+
+.servers {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serverIcon,
+.addServer {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    color: #616161;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #e0e0e0;
+    transition: background-color 0.3s, transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.serverIcon:hover,
+.addServer:hover {
+    background-color: #f3f3f3;
+    border-color: #b0b0b0;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.serverIcon:active,
+.addServer:active {
+    background-color: #e0e0e0;
+    border-color: #a0a0a0;
+    transform: translateY(2px);
+}
+
+.serverIcon.selected,
+.addServer.selected {
+    border-color: #5c6bc0;
+    background-color: #f3f8fc;
+    box-shadow: 0 0 10px rgba(92, 107, 192, 0.4);
+}
+
+.serverIcon.selected {
+    position: relative; 
+    border-color: #5c6bc0;
+    background-color: #f3f8fc;
+    box-shadow: 0 0 10px rgba(92, 107, 192, 0.4);
+}
+
+.serverIcon.selected::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    top: 62px;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 10px;
+    height: 10px;
+    background-color: #5c6bc0;
+    border-radius: 50%;
+}
+

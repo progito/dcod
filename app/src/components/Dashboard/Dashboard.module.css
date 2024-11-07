@@ -1,0 +1,31 @@
+/* Сброс глобальных стилей (если это необходимо) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Сброс стилей для html и body */
+html, body {
+    height: 100%;
+    margin: 0; /* Убедитесь, что margin и padding сброшены */
+    padding: 0;
+}
+
+/* Базовые стили body для другого компонента */
+body {
+    background: none; /* Удаление фонового изображения */
+    display: block; /* Если хотите изменить flex-свойства */
+    justify-content: normal;
+    align-items: normal;
+    font-family: 'Arial', sans-serif; /* Можете изменить шрифт, если нужно */
+    animation: none; /* Удаление анимации */
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+    color: white;
+  }
+  
