@@ -1,0 +1,23 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+}
+  
+input {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #7289da;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
