@@ -1,0 +1,66 @@
+.userSetup {
+    width: 100%; /* Ограничивает ширину до границ родительского контейнера */
+    padding: 10px 15px;
+    background-color: #181818;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Изменено с fixed на relative */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #444;
+    margin-top: auto; /* Притягивает UserSetup к низу родительского блока */
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #5c6bc0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.username {
+    font-size: 14px;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+.userId {
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 18px;
+    color: #b0b0b0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #fff;
+}

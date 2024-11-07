@@ -1,28 +1,83 @@
 .serverChannels {
-  background-color: #40444b;
-  padding: 15px;
-  border-radius: 8px;
+    width: 300px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Позволяет UserSetup оставаться внизу */
+    height: 100vh; /* Заполняет всю высоту экрана */
+    box-sizing: border-box;
 }
 
-.serverChannels h2 {
-  margin: 0 0 10px;
+.serverTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #5c6bc0;
 }
 
-.serverChannels ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.section {
+    margin-bottom: 20px;
 }
 
-.channel {
-  padding: 10px;
-  margin-bottom: 5px;
-  background-color: #2f3136;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.sectionHeader {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 
-.channel:hover {
-  background-color: #3b4048;
+.sectionHeader::before {
+    content: '+';
+    margin-right: 8px;
+    font-weight: bold;
+    color: #5c6bc0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.sectionHeader:hover::before {
+    transform: rotate(90deg);
+}
+
+.channelList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.channelItem {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.channelItem:hover {
+    background-color: #f5f5f5;
+}
+
+.channelItem::before {
+    content: '#';
+    color: #5c6bc0;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Контейнер для UserSetup */
+.userSetupContainer {
+    margin-top: auto; /* Прижимает к нижней части блока */
+    padding-top: 20px;
+    width: 100%; /* Ограничивает ширину */
+    box-sizing: border-box;
 }
