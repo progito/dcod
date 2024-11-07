@@ -1,3 +1,4 @@
+/* Общий стиль для блока каналов */
 .serverChannels {
     width: 300px;
     background-color: #ffffff;
@@ -12,6 +13,7 @@
     box-sizing: border-box;
 }
 
+/* Заголовок для блока каналов */
 .serverTitle {
     font-size: 18px;
     font-weight: 600;
@@ -19,6 +21,7 @@
     color: #5c6bc0;
 }
 
+/* Секция канала */
 .section {
     margin-bottom: 20px;
 }
@@ -46,12 +49,14 @@
     transform: rotate(90deg);
 }
 
+/* Список каналов */
 .channelList {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Элементы списка каналов */
 .channelItem {
     padding: 8px 12px;
     border-radius: 5px;
@@ -67,11 +72,11 @@
     background-color: #f5f5f5;
 }
 
-.channelItem::before {
-    content: '#';
+/* Иконка канала - динамик для голосовых каналов */
+.icon {
     color: #5c6bc0;
     margin-right: 8px;
-    font-weight: bold;
+    font-size: 16px;
 }
 
 /* Контейнер для UserSetup */
@@ -80,4 +85,5 @@
     padding-top: 20px;
     width: 100%; /* Ограничивает ширину */
     box-sizing: border-box;
+    border-top: 1px solid #ddd; /* Разделяет UserSetup от каналов */
 }
